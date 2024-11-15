@@ -1,4 +1,4 @@
-# Web and Mobile Application Assignment
+# Web Application Assignment
 
 ## Description
 This project serves as a personal portfolio website showcasing various projects, skills, and interests. It is designed to provide an interactive and responsive user experience, including features such as project exploration, a contact form, and a personal introduction.
