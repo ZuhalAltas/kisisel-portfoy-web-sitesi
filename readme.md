@@ -25,7 +25,6 @@ The website primarily aims to demonstrate web development skills and integrate t
     open index.html
     ```
 
-To test dynamic features like form submission, host the project on a local server using tools like VS Code Live Server or Python's SimpleHTTPServer.
 
 ## Features
 - **Home Page**: Introduction to the portfolio, featuring the creator's personal and professional overview.
