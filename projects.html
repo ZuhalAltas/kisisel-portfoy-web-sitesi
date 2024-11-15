@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projelerim | Zuhal Altaş Kişisel Portföy</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" type="image/jpeg" href="img/zharfi.jpeg">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="about.html">Hakkımda</a></li>
+                <li><a href="projects.html">Projelerim</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+            </ul>
+        </nav>
+
+        <section id="projelerim">
+            <h2>Projelerim</h2>
+
+            <div class="sorting-container">
+                <button id="show-all-button">Tümünü Göster</button>
+                <button id="sort-button" aria-haspopup="true" aria-expanded="false" onclick="toggleSortOptions()">
+                    Sırala <span class="arrow">▼</span>
+                </button>
+                <ul id="sort-options" class="sort-options" aria-hidden="true">
+                    <li id="sort-latest">En Son Projeler</li>
+                    <li id="sort-popular">En Beğenilen Projeler</li>
+                </ul>
+            </div>
+
+
+            <div class="projeler-container"  >
+                <div class="proje-card" id="proje1" >
+                    <h3>Elektrik Faturası Tahmin Uygulaması</h3>
+                    <img src="img/Resim1.png" alt="Uygulama Giris" >
+                    <div class="proje-description" style="display: none;">
+                        <p>
+                            Bu uygulamanın amacı, kullanıcının belirli girdilerle yaklaşık aylık elektrik faturası tutarını tahmin etmektir. Kullanıcı, uygulama çalıştırıldığında karşıladığı kullanıcı arayüzü (GUI) üzerinden "Devam" butonuna tıklayarak işlemi başlatır. İlk olarak, kullanıcıdan evdeki oda sayısı, kişi sayısı ve evin alanı gibi bilgiler istenir. Ardından, kullanıcıya evde klima, televizyon ve evin daire olup olmadığı gibi ek bilgiler sorulur. Ortalama aylık gelir ve çocuk sayısı gibi diğer veriler de kullanıcıdan toplanarak işlem devam eder. Kullanıcı, şehir merkezinde olup olmadığını belirtir ve son olarak "Tahmin Et" butonuna tıklayarak aylık elektrik faturası tutarının tahmin edilmesini sağlar.
+                        </p>
+                        <p>   
+                            Uygulama, kullanıcının girdiği bilgileri aldıktan sonra, eğitim aldığı parametreler üzerinden bir tahmin yapar. Bu tahmin, RandomForestRegressor algoritması kullanılarak gerçekleştirilir. RandomForestRegressor, birçok karar ağacını birleştirerek güçlü ve genelleştirilebilir bir regresyon modeli oluşturan bir makine öğrenimi algoritmasıdır. Bu algoritma, çok sayıda özellik ve alt örnekleme kullanarak birçok karar ağacı oluşturur ve bu ağaçların tahminlerini bir araya getirerek daha güvenilir ve yüksek performanslı bir model elde eder.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proje-card" id="proje2"  >
+                    <h3>Kişisel Müzik Kütüphanesi Düzenleyicisi</h3>
+                    <img src="img/Proje2.jpg" alt="Uygulama Giris" >
+                    <div class="proje-description" style="display: none;">
+                        <p>
+                            Kişisel Müzik Kütüphanesi Düzenleyicisi projesi arkadaşımla birlikte geliştirdiğimiz, C++ ile  bir konsol uygulamasıdır ve kullanıcı güvenliğine odaklanır. Bu uygulama, kayıt veya oturum açma seçenekleri sunarak müzik kütüphanesine erişim sağlar. Kullanıcı oturum açtıktan sonra şarkı arayabilir, kütüphaneye yeni şarkılar ekleyebilir veya mevcut şarkıları düzenleyebilir. Uygulama, kütüphanenin tüm işlevlerini güvenli bir ortamda sunarak müzik koleksiyonunu etkili bir şekilde yönetmek isteyenler için geliştirilmiştir.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proje-card" id="proje3" >
+                    <h3>Araba Kiralama Sistemi </h3>
+                    <img src="img/Proje3_2.jpg" alt="Admin Girişi" >
+                    <div class="proje-description" style="display: none;">
+                        <p>
+                            Java dilinde geliştirdiğimiz Araç Kiralama Sistemi, kullanıcı ve admin işlevselliğine sahip bir uygulamadır. Admin kullanıcı oturum açtıktan sonra yeni araçlar ekleyebilir ve kiralama bilgilerini yönetebilir. Kullanıcı ise oturum açarak araç kiralama işlemlerini yapabilir ve şirketle doğrudan iletişime geçebilir. Arkadaşımla birlikte geliştirdiğimiz bu sistem, araç kiralama sürecini kolaylaştırmak için kapsamlı bir çözüm sunmaktadır.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+          
+        <div class="modal-overlay">
+            <div class="modal-content">
+                <button class="modal-close" onclick="closeModal()">X</button>
+                <h3 class="modal-title"></h3>
+                <img src="" class="modal-img" alt="Proje Görseli">
+                <div class="modal-description"></div>
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim | Zuhal Altaş Kişisel Portföy </title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/jpeg" href="img/zharfi.jpeg">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="about.html">Hakkımda</a></li>
+            <li><a href="projects.html">Projelerim</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+        </ul>
+    </nav>
+    <section id="iletişim">
+        <h2>İletişim</h2>
+        <p>
+            Merhaba! Bana ulaşmak için aşağıdaki formu kullanabilirsiniz veya doğrudan e-posta yoluyla iletişime geçebilirsiniz. Projelerim hakkında sorularınız varsa ya da yeni iş birliği fırsatları üzerinde konuşmak istiyorsanız bana ulaşmaktan çekinmeyin!
+        </p>
+
+        <h3>İletişim Formu</h3>
+
+        <form id="contact-form" method="post">
+            <label for="name">Adınız:</label>
+            <br>
+            <input type="text" id="name" name="name" >
+            <div class="error-message" id="name-error" style="color: red;"></div> 
+            <br>
+            <label for="email">E-posta Adresiniz:</label>
+            <br>
+            <input type="email" id="email" name="email" >
+            <div class="error-message" id="email-error" style="color: red;"></div> 
+            <br>
+            <label for="message">Mesajınız:</label>
+            <br>
+            <textarea id="message" name="message" rows="4" ></textarea>
+            <div class="error-message" id="message-error" style="color: red;"></div> 
+            <br>
+            <button type="submit" class="iletişim-buton">Gönder</button>
+        </form>
+
+        <h3>İletişim Bilgileri</h3>
+        <div class="sosyal-medya-linkleri">
+            <a href="https://github.com/ZuhalAltas" target="_blank">
+                <img src="img/github_logo.png" alt="Github" style="width: 50px; height: 50px;">
+            </a>
+
+            <a href="mailto:zuhalaltas090@gmail.com" target="_blank">
+                <img src="img/gmail_logo.png" alt="Gmail" style="width: 50px; height: 50px;">
+            </a>
+
+            <a href="https://www.linkedin.com/in/zuhal-alta%C5%9F-3b9707210" target="_blank">
+                <img src="img/linkedIn_logo.png" alt="Linkedin" style="width: 50px; height: 50px;">
+            </a>
+        </div>
+
+        <address>
+            Şişli, Istanbul <br>
+            Türkiye
+        </address>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
